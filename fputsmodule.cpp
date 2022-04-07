@@ -17,7 +17,7 @@ static PyObject *method_fputs(PyObject *self, PyObject *args) {
 }
 
 static PyMethodDef FputsMethods[] = {
-    {"fputs", method_fputs, METH_VARARGS, "Python interface for fputs C library function"},
+    {"fputs", method_fputs, METH_VARARGS, "Python interface for fputs C++ library function"},
     {NULL, NULL, 0, NULL}
 };
 
@@ -25,7 +25,7 @@ static PyMethodDef FputsMethods[] = {
 static struct PyModuleDef fputsmodule = {
     PyModuleDef_HEAD_INIT,
     "fputs",
-    "Python interface for the fputs C library function",
+    "Python interface for the fputs C++ library function",
     -1,
     FputsMethods
 };
